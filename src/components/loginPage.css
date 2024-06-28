@@ -1,0 +1,47 @@
+#container-login{
+    
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #36343458;
+
+}
+
+#login_main_title{
+    font-size: 2.5em;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+input{
+    padding: 1rem;
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 1.2rem;
+    color: #36343458;
+}
+.button_login{
+    background-color: #35A7FF;
+    color: aliceblue;
+    border: none;
+    padding: 1.2rem ;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 4rem 0 1rem 0;
+}
+
+.button_link{
+    background-color: transparent;
+    border: none;
+    color: #35A7FF;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+#container-login p{
+    font-size: 1rem;
+    align-self: center;
+    color: black;
+}
