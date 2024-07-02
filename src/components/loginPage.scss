@@ -1,12 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #main_container{
     display: flex;
     flex-direction: row;
     width: 100%;
 
     @media screen and (min-width: 1024px){
-        height: 100vh;
+        height: 90vh;
+        border: 2px solid pink;
+
+        display: flex;
+        flex-direction: row;
     }
 }
+.container-desk{
+
+    @media screen and (min-width: 1024px){
+border: 2px solid green;
+width: 50%;
+}
+}
+
 
 #container-login{
     font-size: 13px;
@@ -20,7 +37,7 @@
         
         border: 2px blue solid;
         width: 20%;
-        margin: 16rem;
+        margin: 6rem;
     }
 } 
 
