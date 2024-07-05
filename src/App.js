@@ -1,8 +1,8 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LoginForm from './components/loginPage'; // Assure-toi que le chemin est correct
-import SignUpForm from './components/signUpPage'; // Assure-toi que le chemin est correct
+import LoginForm from './components/loginPage';
+import SignUpForm from './components/signUpPage';
 import Dashboard from './components/dashboard';
 import MyWallet from './components/MyWallet';
 import MyCart from './components/MyCart';
@@ -17,7 +17,6 @@ function App() {
         <Sidebar />
         <div className="content">
           <Routes>
-            {/* Routes principales pour le sidebar et le contenu */}
             <Route path="/login" element={<LoginForm />} />
             <Route path="/signup" element={<SignUpForm />} />
             <Route path="/dashboard" element={<Dashboard />} />
@@ -26,7 +25,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
             <Route path="/logout" element={<Logout />} />
             {/* Redirection depuis la route principale vers /login */}
-            <Route path="/" element={<LoginForm />} />
+            <Route path="/" element={<Navigate to="/login" />} />
           </Routes>
         </div>
       </div>
